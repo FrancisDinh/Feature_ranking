@@ -61,6 +61,21 @@ In order to understand the ranking models and to pick the best performed one, on
 Therefore, once we have the ranked sensors, it is very difficult to argue that the ranking is totally correct.
 
 ## Components
++ task_data.csv
++ task.txt
++ README.md
++ svmranker.py: a class built from soft SVM, including other functions for the ease of computation.
++ treeranker.py: a class built from tree-model, including with other functions for the ease of computation.
++ my_notebook.ipynb: includes the pipeline of the process
++ tree_ranking.txt: ranked features from tree model
++ svm_ranking.txt: ranked features from soft SVM
++ ReportSmartSteel.pdf: the final report.
+
+In each ranker, we have:
++ dataLoader: create features and labels, split train-test sets
++ Train: perform fit model
++ Permutation: verify the ranked feature with permutation importance, it can also be used alone, by adjusting the train-test split to 1
++ Report: plot the ranking and returns ranking as list
 
 ## Filter method 
 They the the general methods, which we expect to pick a subset of features. 
