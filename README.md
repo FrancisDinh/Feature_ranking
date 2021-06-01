@@ -77,20 +77,3 @@ In each ranker, we have:
 + Permutation: verify the ranked feature with permutation importance, it can also be used alone, by adjusting the train-test split to 1
 + Report: plot the ranking and returns ranking as list
 
-## Filter method 
-They the the general methods, which we expect to pick a subset of features. 
-Using correlation matrix is the most basic filter method. 
-We can see that, all 10 sensors show the independence to each other with small correlation values. 
-On the class column, we can see the top three sensors are sensor 8, 4, and 0. 
-Naively, this means the value of class column depends on 3 sensors more than other.
-
-// add image of correlation matrix
-
-Advantage and disadvantages
-
-## Tree-based method
-It is the most common to-go method for this problem, where we have nummerical features and categorical class.
-
-Based on the dataset and the question, the tree model is the most suitable, for classification 10 sensors, instead of 10 classification models for each sensor.
-
-Choosing the models, the tree models are immune to multicollinearity of the dataset. Tradiditonal way to solve the multicollinearity problem is to remove these features, other ML ways could be using dimension reduction method: PCA, LDA, and auto encoder. This problem could also be seen as feature selections, in which we will try to select the top 3 sensors in set of 10.
