@@ -76,4 +76,3 @@ In each ranker, we have:
 + Train: perform fit model
 + Permutation: verify the ranked feature with permutation importance, it can also be used alone, by adjusting the train-test split to 1
 + Report: plot the ranking and returns ranking as list
-

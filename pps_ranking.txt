@@ -1,0 +1,10 @@
+sensor6: 0.99
+sensor1: 0.572
+sensor8: 0.518
+sensor2: 0.492
+sensor4: 0.397
+sensor0: 0.336
+sensor5: 0.225
+sensor3: 0.152
+sensor9: 0.125
+sensor7: 0.005
