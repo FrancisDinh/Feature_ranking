@@ -69,7 +69,9 @@ Therefore, once we have the ranked sensors, it is very difficult to argue that t
 + my_notebook.ipynb: includes the pipeline of the process
 + tree_ranking.txt: ranked features from tree model
 + svm_ranking.txt: ranked features from soft SVM
++ pps_ranking.txt: additional file of ranked features from Predictive Power Score
 + ReportSmartSteel.pdf: the final report.
++ judge.py: the logistic regression model to evaluate the ranked features
 
 In each ranker, we have:
 + dataLoader: create features and labels, split train-test sets
